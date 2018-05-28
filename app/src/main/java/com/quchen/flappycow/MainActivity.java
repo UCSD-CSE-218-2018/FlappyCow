@@ -9,6 +9,7 @@ package com.quchen.flappycow;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.example.games.basegameutils.BaseGameActivity;
+import com.quchen.flappycow.aspectj.DebugTrace;
 
 import android.os.Bundle;
 import android.content.SharedPreferences;
@@ -29,6 +30,7 @@ public class MainActivity extends BaseGameActivity {
     
     private StartscreenView view;
 
+    @DebugTrace
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
